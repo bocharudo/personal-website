@@ -24,7 +24,7 @@ section h2 {
 header {
   background-color: #2E4057;
   height: 7.5rem;
-  padding: 0 1.2rem;
+  padding: 0 0.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,10 +38,9 @@ header {
   box-shadow: 0.8rem 0.8rem 0.2rem #000;
 }
 .logo {
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   color: #F4FFF8;
   font-family: "Chakra Petch", sans-serif;
-  padding-right: 0.4rem;
   text-shadow: 0.2rem 0.2rem #4EA699;
 }
 #navbar ul {
@@ -55,8 +54,8 @@ header {
 #navbar ul li a {
   border: 0.2rem solid #F4FFF8;
   border-radius: 0.6rem;
-  font-size: 1rem;
-  padding: 0.2rem 0.4rem;
+  font-size: 0.4rem;
+  padding: 0.2rem;
   text-decoration: none;
   color: #F4FFF8;
 }
