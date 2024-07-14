@@ -92,11 +92,11 @@ header {
   margin-top: 1rem;
   font-size: 1.6rem;
 }
-#heading a .chevron-down {
+#heading a i {
   margin-top: -0.4rem;
   font-size: 1.6rem;
 }
-#heading a:hover, #heading a .chevron-down:hover {
+#heading a:hover, #heading a i:hover {
   transform: scale(90%);
   transition: 0.5s ease-in-out 0.2s;
 }
