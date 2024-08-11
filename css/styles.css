@@ -1,14 +1,13 @@
 :root {
-  --text-color: #e2e2e2;
-  --black-text-color: #444;
-  --background-color: #101010;
-  --box-selection-color: #e2e2e2;
-  --box-text-color: #444;
+  --text-color: #ffffff;
+  --background-color: #000000;
+  --box-selection-color: #ffffff;
+  --box-text-color: #000000;
   --title-text: "Lato", sans-serif;
   --cursive-text: "Meddon", cursive;
-  --section-title-background: #151515;
-  --box-border: #151515;
-  --black-icon-color: #101010;
+  --section-title-background: #0f0c0c;
+  --box-border: #000000;
+  --black-icon-color: #000000;
 }
 *,
 ::before,
@@ -124,9 +123,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-.dev-name, .description {
-  color: var(--black-text-color);
-}
 .dev-name {
   font-size: 3.6rem;
   font-family: var(--title-text);
@@ -177,9 +173,6 @@ main {
   padding: 2rem;
   width: 100%;
   max-width: 50rem;
-}
-.skill-title, .skill-container li {
-  color: var(--black-text-color);
 }
 .skill-title {
   font-size: 2.4rem;
@@ -260,9 +253,6 @@ main {
 .project-info {
   padding: 1.4rem;
 }
-.project-name, .project-description {
-  color: var(--black-text-color);
-}
 .project-name {
   font-family: var(--title-text);
   font-weight: 900;
@@ -316,6 +306,9 @@ code {
   width: fit-content;
   border: 0.4rem solid var(--box-border);
   border-radius: 1rem;
+}
+.your-name {
+  transform: scale(0.5)
 }
 
 /* back-to-top & social-icons */
