@@ -11,3 +11,11 @@ function menuToggleClose() {
 function imgClickNull() {
   alert("No link for this project yet. Construction still ongoing!");
 }
+
+// survey-form.html
+function fakeSubmittedNotice() {
+  alert("Yeah, it works! (not actually submitted lol, idk php yet.)");
+}
+function termsNull() {
+  alert("i didn't made a real terms and conditions ^.^");
+}
