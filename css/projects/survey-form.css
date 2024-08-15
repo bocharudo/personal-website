@@ -10,23 +10,28 @@ html {
 }
 body {
   font-family: "Raleway", sans-serif;
+  background-color: #22243e;
 }
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #22243e;
   height: 100vh;
 }
 .form-container {
   width: 90%;
   max-width: 45rem;
-  height: 80%;
+  height: fit-content;
   padding: 4rem 2rem;
+  margin: 5rem auto;
   background-color: #e5e5e5;
   border: 0.2rem solid #000;
   border-radius: 1.4rem;
   box-shadow: #000 0.7rem 1rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: center;
 }
 .header-container, .footer-container {
   text-align: center;
