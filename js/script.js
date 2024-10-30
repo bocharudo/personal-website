@@ -17,11 +17,11 @@ function nullLink() {
 }
 
 // navigation - page indicator
-const active_page = window.location.pathname;
+const active_page = window.location.pathname === "/" ? "/index.html" : window.location.pathname;
 console.log(active_page);
 
 const nav_links = document.querySelectorAll(".nav-link").forEach(link => {
-  if(link.href.includes(`${active_page}`)) {
+  if(link.href.includes(active_page)) {
     link.classList.add("active-page");
   }
 })
