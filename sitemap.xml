@@ -9,7 +9,38 @@
 
 <url>
   <loc>https://tenkyuu.dev/</loc>
-  <lastmod>2024-07-16T03:18:01+00:00</lastmod>
+  <lastmod>2024-09-03T11:03:59+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://tenkyuu.dev/legacy/v2/</loc>
+  <lastmod>2024-09-03T11:03:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tenkyuu.dev/legacy/v1/</loc>
+  <lastmod>2024-09-03T11:03:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tenkyuu.dev/legacy/v2/projects</loc>
+  <lastmod>2024-09-03T11:03:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tenkyuu.dev/legacy/v2/about</loc>
+  <lastmod>2024-09-03T11:03:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tenkyuu.dev/legacy/v2/contact</loc>
+  <lastmod>2024-09-03T11:03:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tenkyuu.dev/legacy/v2/projects/survey-form</loc>
+  <lastmod>2024-09-03T11:03:59+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 
 
