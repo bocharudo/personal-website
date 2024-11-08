@@ -23,6 +23,7 @@ console.log(active_page);
 const nav_links = document.querySelectorAll(".nav-link").forEach(link => {
   if(link.href.includes(active_page)) {
     link.classList.add("active-page");
+    link.closest(".nav-item").classList.add("active-page-bg");
   }
 })
 
