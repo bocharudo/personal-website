@@ -25,3 +25,21 @@ const nav_links = document.querySelectorAll(".nav-link").forEach(link => {
     link.classList.add("active-page");
   }
 })
+
+// under constuction div
+const underConstruction = () => {
+  const header = document.querySelector('header');
+  if (!header) {
+    console.log('Header element not found.');
+    return;
+  }
+
+  header.insertAdjacentHTML('afterend',
+    `<div class="under-construction-ctn">
+      <div class="under-construction-text">
+        WEBSITE IS UNDER CONSTRUCTION :D
+      </div>
+    </div>`);
+};
+
+underConstruction();

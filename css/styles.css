@@ -337,6 +337,9 @@ footer {
 .form-container {
   margin-top: 7rem;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contact-form {
   font-family: 'Amatic SC', serif;
@@ -347,10 +350,12 @@ footer {
 .form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 1.7rem;
   border: 0.1rem solid white;
   border-radius: 1rem;
+  width: 100%;
   max-width: 60rem;
 }
 label,
@@ -396,6 +401,28 @@ textarea {
 }
 .privacy-notice-link:hover {
   color: var(--linkhover4);
+}
+
+
+
+
+
+
+/* UNDER CONSTRUCTION */
+.under-construction-ctn {
+  position: fixed;
+  height: 4rem;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 6rem;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.under-construction-text {
+  width: 50%;
+  background-color: var(--mainbg2);
 }
 
 
