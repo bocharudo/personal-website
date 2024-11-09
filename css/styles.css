@@ -229,17 +229,8 @@ section {
   text-decoration: none;
   background-size: cover;
   background-position: center;
-  filter: saturate(0) blur(0.5px) brightness(90%);
   transition: filter 0.2s ease-in-out;
   padding-top: 4rem;
-}
-.crd-link:hover {
-  filter: saturate(1) blur(0) brightness(100%);
-}
-.crd-link:hover .fa-arrow-right {
-  right: 0;
-  visibility: visible;
-  opacity: 1;
 }
 .crd-content-ctn-1,
 .crd-content-ctn-2,
@@ -265,11 +256,9 @@ section {
   font-size: 5rem;
   position: absolute;
   bottom: 0;
-  right: 3rem;
+  right: 0;
   padding: 2rem;
   transition: 0.2s ease-in-out;
-  visibility: hidden;
-  opacity: 0;
   color: var(--linkcolor);
   filter: drop-shadow( 1px 1px 2px #000);
 }
@@ -415,21 +404,49 @@ textarea {
 
 
 
+@media only screen and (min-width: 600px) {
+  .crd-link {
+    filter: saturate(0) blur(0.5px) brightness(90%);
+  }
+  .crd-link:hover {
+    filter: saturate(1) blur(0) brightness(100%);
+  }
+  .crd-arrow {
+    right: 3rem;
+    opacity: 0;
+  }
+  .crd-link:hover .fa-arrow-right {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
 /* UNDER CONSTRUCTION */
 .under-construction-ctn {
   position: fixed;
   height: fit-content;
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-align: center;
   margin-top: 6rem;
   z-index: 1;
   display: flex;
   justify-content: center;
+  background-color: #ff4a4a;
 }
-.under-construction-text {
-  width: 50%;
-  background-color: var(--mainbg2);
+
+/* FORM NOT WORKING */
+.form-not-working-ctn {
+  font-size: 1.5rem;
+  background-color: #fd3535;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
 }
 
 
