@@ -1,19 +1,20 @@
 :root {
-  --mainbg1: #000;
-  --mainbg2: #2c2c2c;
+  --mainbg1: #e2e2e2;
+  --mainbg2: #f0f0f0;
+  --formbg: #474747;
   --linkbg: #1b1b1b;
   --linkcolor: #fff;
+  --linkcolor1: #111;
   --linkhover1: #fff;
-  --linkhover2: #acacac;
-  --linkhover3: #0060df;
-  --linkhover4: #4680cc;
-  --barcolor: #fff;
-  --textcolor1: #fff;
-  --textcolor2: #c2c2c2;
-  --textcolor3: #727272;
-  --textcolor4: #0060df;
+  --linkhover2: #505050;
+  --linkhover3: #cecece;
+  --barcolor: #111;
+  --textcolor0: #f0f0f0;
+  --textcolor1: #111;
+  --textcolor2: #333333;
+  --textcolor3: #6e6e6e;
   --textcolor5: #000;
-  --currentpageindicator: #0060df;
+  --currentpageindicator: #f0f0f0;
 }
 *,
 ::before,
@@ -31,7 +32,7 @@ body {
   display: flex;
   flex-direction: column;
   color: var(--textcolor1);
-  background-color: #0e0e0d;
+  background-color: var(--mainbg2);
 }
 header {
   position: fixed;
@@ -64,7 +65,7 @@ header {
 .nav-menu {
   position: fixed;
   top: 7rem;
-  left: 0;
+  left: -100%;
   background-color: var(--mainbg1) ;
   opacity: 0;
   padding: 2.4rem;
@@ -72,11 +73,12 @@ header {
   width: 100%;
   z-index: 2;
   pointer-events: none;
-  transition: 0.1s ease-in-out;
+  transition: 0.2s ease-in-out;
   overflow-y: auto;
 }
 .nav-menu.active {
   pointer-events: unset;
+  left: 0;
   opacity: 1;
 }
 .nav-title {
@@ -106,7 +108,7 @@ header {
   color: var(--linkhover1);
 }
 .nav-item:hover .project-link-info {
-  color: var(--linkhover2);
+  color: var(--linkhover3);
 }
 .nav-link {
   color: var(--textcolor2);
@@ -122,7 +124,6 @@ header {
   color: var(--textcolor3);
 }
 .nav-link:is(:link, :active, :visited).active-page::before {
-  content: '> ';
   color: var(--currentpageindicator);
 }
 /* footer in navigation menu */
@@ -143,18 +144,17 @@ header {
   font-family: 'Amatic SC', serif;
   font-weight: 700;
   font-size: 1.7rem;
-  color: var(--textcolor4);
 }
 .nav-social {
   font-size: 2rem;
 }
 .nav-social a {
-  color: var(--linkcolor);
+  color: var(--linkcolor1);
   text-decoration: none;
   margin: auto 0.2rem;
 }
 .nav-social a:hover, .nav-social a:focus {
-  color: var(--linkhover3);
+  color: var(--linkhover2);
 }
 /* navigation hamburger design */
 .mobile-menu {
@@ -191,7 +191,7 @@ section {
   height: 100vh;
 }
 .bg-1 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(/assets/images/static/background-cover-1.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url(/assets/images/static/background-cover-1.jpg);
 }
 .background-cover {
   background-position: center;
@@ -211,10 +211,11 @@ section {
   font-family: 'Amatic SC', serif;
   font-weight: 700;
   font-size: 7rem;
+  color: var(--textcolor0);
 }
 .tagline {
   font-size: 1.9rem;
-  color: var(--textcolor2);
+  color: var(--textcolor0);
 }
 
 
@@ -299,12 +300,12 @@ section {
 .got-ans {
   font-size: 3rem;
   transition: 0.2s ease-in-out;
-  color: var(--linkcolor);
+  color: var(--linkcolor1);
 }
 .q-arrow {
   margin-bottom: -0.3rem;
   transition: 0.2s ease-in-out;
-  color: var(--linkhover3);
+  color: var(--linkhover2);
 }
 
 
@@ -344,12 +345,13 @@ footer {
   margin-bottom: 1rem;
 }
 .form {
+  background-color: var(--formbg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1.7rem;
-  border: 0.1rem solid white;
+  border: 0.1rem solid #000000;
   border-radius: 1rem;
   width: 100%;
   max-width: 60rem;
@@ -364,9 +366,10 @@ input,
 textarea {
   font-family: 'Pangolin', serif;
   font-size: 1.7rem;
-  padding: 0.4rem;
+  padding: 1rem;
 }
 label {
+  color: var(--textcolor0);
   font-size: 2rem;
   margin-top: 1rem;
 }
@@ -376,19 +379,21 @@ textarea {
 }
 .contact-submit-btn {
   font-size: 1.7rem;
-  padding: 0.4rem;
+  padding: 1rem;
   margin-top: 1.4rem;
   width: 100%;
   transition: 0.1s ease-in-out;
   border: none;
   border-radius: 0.4rem;
-  background-color: var(--linkhover3);
-  color: var(--textcolor1);
+  background-color: var(--linkcolor1);
+  color: var(--textcolor0);
 }
 .contact-submit-btn:hover {
-  background-color: var(--linkhover4);
+  background-color: var(--linkhover1);
+  color: var(--textcolor1);
 }
 .form-privacy-notice {
+  color: var(--textcolor0);
   margin-top: 1rem;
   font-size: 1.2rem;
 }
@@ -437,13 +442,15 @@ textarea {
   z-index: 1;
   display: flex;
   justify-content: center;
-  background-color: #ff4a4a;
+  background-color: #aaaaaa;
+  color: var(--textcolor1);
 }
 
 /* FORM NOT WORKING */
 .form-not-working-ctn {
   font-size: 1.5rem;
-  background-color: #fd3535;
+  background-color: #fd5b5b;
+  color: var(--textcolor0);
   width: 100%;
   padding: 1rem;
   text-align: center;
