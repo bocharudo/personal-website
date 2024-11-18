@@ -1,0 +1,3 @@
+[submodule "projects/palindrome-checker"]
+	path = projects/palindrome-checker
+	url = https://github.com/bocharudo/palindrome-checker.git
