@@ -3,24 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="rain/bocharudo">
-  <meta name="description" content="I code on paper and create websites out of it.">
-  <meta name="referrer" content="no-referrer">
+  <meta name="author" content="rain (bocharudo)">
+  <meta name="description" content="A simple and efficient palindrome checker.">
   <meta name="robots" content="index, follow">
-  <title>rain - web developer</title>
+  <title>Palindrome Checker by Bocharudo</title>
+
+  <!-- Favicon -->
   <link rel="icon" type="image/ico" href="assets/icons/favicon.ico">
-  <link rel="preload" href="css/styles.css" as="style">
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- meta stuffs -->
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/palindrome-checker.css">
+
+  <!-- Open Graph Metadata -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="rain - web developer">
-  <meta property="og:description" content="I code on paper and create websites out of it.">
+  <meta property="og:title" content="Palindrome Checker - Efficient & Simple">
+  <meta property="og:description" content="Easily check if your input is a palindrome with this efficient tool.">
   <meta property="og:image" content="assets/pfp/profile.jpg">
-  <meta property="og:url" content="https://tenkyuu.dev">
+  <meta property="og:url" content="https://tenkyuu.dev/projects/palindrome-checker.html">
+
+  <!-- Twitter Card Metadata -->
   <meta name="twitter:card" content="summary_large_image">
+
   <!-- Bunny Fonts -->
   <link rel="preconnect" href="https://fonts.bunny.net">
-  <link href="https://fonts.bunny.net/css2?family=Amatic+SC:wght@400;700&family=Pangolin&display=swap" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');">
+  <link href="https://fonts.bunny.net/css2?family=Pangolin&display=swap" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');">
+
+  <!-- NoScript -->
+  <noscript>
+    <link href="https://fonts.bunny.net/css2?family=Pangolin&display=swap" rel="stylesheet">
+  </noscript>
+</head>
 <body>
+  <main>
+    <h1>Palindrome Checker</h1>
+    <div class="palindrome-ctn">
+      <div class="guide-txt">Enter the text you want to check:</div>
+      <div class="input-ctn">
+        <input type="text" id="text-input">
+        <button type="button" id="check-btn">Check</button>
+      </div>
+      <div id="result"></div>
+    </div>
+
+    <div class="info">
+      <h2>What is a Palindrome?</h2>
+      <p class="description">
+        A palindrome is a word, phrase, number, or sequence of characters that reads the same backward as it does forward, ignoring spaces, punctuation, and capitalization.
+      </p>
+    </div>
+  </main>
+
+  <script src="js/palindrome-checker.js"></script>
 </body>
 </html>
