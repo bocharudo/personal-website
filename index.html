@@ -22,6 +22,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  font-size: 62.5%;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -55,6 +58,15 @@ p {
 }
 footer {
   margin-top: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+  font-size: 3rem;
+  }
+  p {
+  font-size: 1.5rem;
+  }
 }
   </style>
 </head>
@@ -98,6 +110,6 @@ footer {
 </body>
 
 <footer>
-  <p>&copy Copyright rain/ametoresu</p>
+  <p>&copy Copyright <a href="https://github.com/ametoresu">rain/ametoresu</a></p>
 </footer>
 </html>
