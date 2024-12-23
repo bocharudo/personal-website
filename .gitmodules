@@ -1,6 +1,9 @@
 [submodule "projects/palindrome-checker"]
 	path = projects/palindrome-checker
-	url = https://github.com/bocharudo/palindrome-checker.git
+	url = https://github.com/ametoresu/palindrome-checker.git
 [submodule "projects/roman-numeral-converter"]
 	path = projects/roman-numeral-converter
-	url = https://github.com/bocharudo/roman-numeral-converter.git
+	url = https://github.com/ametoresu/roman-numeral-converter.git
+[submodule "temperature-converter"]
+	path = temperature-converter
+	url = https://github.com/ametoresu/temperature-converter.git
