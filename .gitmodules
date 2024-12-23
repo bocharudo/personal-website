@@ -4,6 +4,3 @@
 [submodule "projects/roman-numeral-converter"]
 	path = projects/roman-numeral-converter
 	url = https://github.com/ametoresu/roman-numeral-converter.git
-[submodule "temperature-converter"]
-	path = projects/temperature-converter
-	url = https://github.com/ametoresu/temperature-converter.git
